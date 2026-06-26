@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title> SignUp </title>
+        <link rel="stylesheet" href="../Design/Style.css">
+    </head>
+    <body>
+        <div class = "container">
+         <h1> User Registartion Form </h1>
+        <fieldset>
+            <legend> Personal Information </legend>
+    
+            <form>
+            <table>
+                <tr> 
+                    <td><label for ="Fname"> First Name * </label></td>
+                    <td><input type ="text" id ="Fname" First name="Fname"></td>
+                </tr>
+
+                <tr> 
+                    <td><label for ="Lname"> Last Name * </label></td>
+                    <td><input type ="text" id ="Lname" Last name="Lname"></td>
+                </tr>
+
+                <tr>
+                    <td><label for ="DOB"> DOB : </label> </td>
+                    <td><input type ="date" id ="DOB" name="DOB"></td>
+                </tr>
+
+                <tr> 
+                    <td><label for ="Gender"> Gender : </label>  </td>
+                    <td>
+                        <input type="checkbox" id="Male" name="Gender ">
+                        <label for ="Male"> Male </label>
+                        <input type="checkbox" id="Female" name="Gender ">
+                        <label for ="Female"> Female </label>
+                        <input type="checkbox" id="Other" name="Gender">
+                        <label for ="Other"> Other </label>
+                    </td>
+                </tr>
+                 </table> 
+        </fieldset>
+
+        <fieldset>
+            <legend> Current Information </legend>
+            <table>
+                <tr> 
+                    <td><label for ="Email"> Email Address * </label></td>
+                    <td><input type ="text" id ="Email" Email Address="Email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for ="Phone"> Phone Number * </label></td>
+                    <td><input type ="text" id ="Phone" name="Phone"></td>
+                </tr>
+
+                <tr>
+                    <td><label for ="Address"> Address: </label> </td>
+                    <td>
+                        <textarea id="Address" rows="5" cols="20" placeholder="Enter Your Full Address" style="resize: none;"> </textarea>    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for = "Citizen"> Country  :</label></td>
+                    <td>
+                        <select id="Citizen">
+                            <option id="BD"> Bangladesh </option>
+                            <option id="USA"> USA </option>
+                            <option id="Por"> Portugal </option>
+                            <option id="Brazil"> Brazil </option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+           
+        <fieldset>
+            <legend> Account Information </legend>
+            <table>
+                <tr> 
+                     <td><label for ="username"> User Name: </label> </td>
+                     <td><input type="text" id="username" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label for ="Password"> Password: </label> </td>
+                     <td><input type="password" id="Password" name="Password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for ="CPassword"> Confirm Password: </label> </td>
+                     <td><input type="password" id="CPassword" name="CPassword"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend> Preferences </legend>
+            <table>
+             <tr> 
+                    <td><label for ="Interests"> Interests   : </label>  </td>
+                    <td>
+                        <input type="checkbox" id="Sports" name="Interests">
+                        <label for ="Sports"> Sports </label>
+
+                        <input type="checkbox" id="Music" name="Interests">
+                        <label for ="Music"> Music </label>
+
+                        <br>
+                        <input type="checkbox" id="Reading" name="Interests">
+                        <label for ="Reading"> Reading </label>
+
+                        <input type="checkbox" id="Technology" name="Interests">
+                        <label for ="Technology"> Reading </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="Condition" name="condtion">
+                    <label for ="Condition"> <font color="red">I have Agreed Terms and Conditions*</font> </label> </td>
+                </tr>
+                </table>
+
+
+
+        </fieldset>
+            
+        <input type = "submit" id ="submit" name ="submit" value =SignUp>
+        <input type = "reset" id ="reset" name ="reset" value ="Clear Form">
+
+
+        </form>
+          </div>
+    </body>
+</html>
