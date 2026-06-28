@@ -6,7 +6,7 @@
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(215, 202, 178);
+    background-color:bisque;
     padding: 20px;
     line-height: 1.5;
 }
@@ -14,7 +14,7 @@ body{
 .container{
     max-width: 700px;
     margin: 0 auto;
-    background-color: white;
+    background-color:burlywood;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 20px 20px;
