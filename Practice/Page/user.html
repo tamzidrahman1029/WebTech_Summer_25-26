@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title> Student Portal</title>
+        <link rel="stylesheet" href="../Design/Style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1> Student Portal</h1>
+            <fieldset>
+                <legend class="legend"> Student Information</legend>
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="Fname"> Full Name(Text) :</label></td>
+                            <td><label for="Email"> Email Address :</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="Fname" Fname="Fname" placeholder="Enter your full name"></td>
+                            <td><input type="text" id="Email" Email="Email" placeholder="Enter your email address"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Password"> Password :</label></td>
+                            <td><label for="Age"> Age (Number) :</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="Passwod" Password="Passwod" placeholder="Enter secure Password"></td>
+                            <td><input type="text" id="Age" Age="Age" placeholder="Enter your age"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="DOB"> Date of Birth :</label></td>
+                            <td><label for="Phone"> Phone Number :</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="date" id="DOB" DOB="DOB"></td>
+                            <td><input type="text" id="Phone" Phone="Phone" placeholder="+880 XXXX XXXXXXX"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Gender"> Gender :</label></td>
+                            <td>
+                                <input type="checkbox" id="Male" Male="Gender">
+                                <label for="Male"> Male</label>
+
+                                <input type="checkbox" id="Female" Female="Gender">
+                                <label for="Female"> Female</label>
+
+                                <input type="checkbox" id="Others" Others="Gender">
+                                <label for="Others"> Others</label>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Country"> Country :</label></td>
+                            <td>
+                            <select id="Country">
+                                <option id="Bangladesh"> Bangladesh</option>
+                                <option id="Portugal"> Portugal</option>
+                                <option id="USA"> USA</option>
+                            </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="Condition" Condition="Condition">
+                            <label for="Condition"><font color="red"> I have Agreed the terms and conditions</font></label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </fieldset>
+
+            <input type="submit" class="submitbtn" id="submit" name="submit" value="SUBMIT">
+            <input type="reset" class="clearbtn" id="reset" name="reset" value="CLEAR">
+            
+
+        </div>
+    </body>
+</html>
