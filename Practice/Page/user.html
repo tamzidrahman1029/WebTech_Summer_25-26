@@ -1,88 +1,149 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title> Student Portal</title>
-        <link rel="stylesheet" href="../Design/Style.css">
-    </head>
 
-    <body>
-        <div class="container">
-            <h1> Student Portal</h1>
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="../Design/Style.css">
+    <script src="../JavaScript/Script.js"></script>
+</head>
+
+<body>
+
+    <div class="Position">
+        <div class="Header">
+            <h1>Student Portal</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="https://www.aiub.edu/" target="_blank">AIUB Website</a>
+            <a href="https://portal.aiub.edu/" target="_blank">AIUB Portal</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <form onsubmit="return collect_data()">
+
             <fieldset>
-                <legend class="legend"> Student Information</legend>
-                <form>
-                    <table>
-                        <tr>
-                            <td><label for="Fname"> Full Name(Text) :</label></td>
-                            <td><label for="Email"> Email Address :</label></td>
-                        </tr>
+                <legend class="legend">Student Information</legend>
 
-                        <tr>
-                            <td><input type="text" id="Fname" Fname="Fname" placeholder="Enter your full name"></td>
-                            <td><input type="text" id="Email" Email="Email" placeholder="Enter your email address"></td>
-                        </tr>
+                <table>
 
-                        <tr>
-                            <td><label for="Password"> Password :</label></td>
-                            <td><label for="Age"> Age (Number) :</label></td>
-                        </tr>
+                    <tr>
+                        <td><label for="Fname">Full Name :</label></td>
+                        <td><label for="Email">Email Address :</label></td>
+                    </tr>
 
-                        <tr>
-                            <td><input type="text" id="Passwod" Password="Passwod" placeholder="Enter secure Password"></td>
-                            <td><input type="text" id="Age" Age="Age" placeholder="Enter your age"></td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="Fname" name="Fname" placeholder="Enter your full name">
+                            <p id="NameError"></p>
+                        </td>
 
-                        <tr>
-                            <td><label for="DOB"> Date of Birth :</label></td>
-                            <td><label for="Phone"> Phone Number :</label></td>
-                        </tr>
+                        <td>
+                            <input type="email" id="Email" name="Email" placeholder="Enter your email address">
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td><input type="date" id="DOB" DOB="DOB"></td>
-                            <td><input type="text" id="Phone" Phone="Phone" placeholder="+880 XXXX XXXXXXX"></td>
-                        </tr>
+                    <tr>
+                        <td><label for="Password">Password :</label></td>
+                        <td><label for="Age">Age :</label></td>
+                    </tr>
 
-                        <tr>
-                            <td><label for="Gender"> Gender :</label></td>
-                            <td>
-                                <input type="checkbox" id="Male" Male="Gender">
-                                <label for="Male"> Male</label>
+                    <tr>
+                        <td>
+                            <input type="password" id="Password" name="Password"
+                                placeholder="Enter secure Password">
+                        </td>
 
-                                <input type="checkbox" id="Female" Female="Gender">
-                                <label for="Female"> Female</label>
+                        <td>
+                            <input type="number" id="Age" name="Age" placeholder="Enter your age">
+                        </td>
+                    </tr>
 
-                                <input type="checkbox" id="Others" Others="Gender">
-                                <label for="Others"> Others</label>
+                    <tr>
+                        <td><label for="Address">Address :</label></td>
 
-                            </td>
-                        </tr>
+                        <td>
+                            <textarea id="Address" name="Address" rows="5" cols="25"
+                                style="resize:none;"></textarea>
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td><label for="Country"> Country :</label></td>
-                            <td>
-                            <select id="Country">
-                                <option id="Bangladesh"> Bangladesh</option>
-                                <option id="Portugal"> Portugal</option>
-                                <option id="USA"> USA</option>
+                    <tr>
+                        <td><label for="DOB">Date of Birth :</label></td>
+                        <td><label for="Phone">Phone Number :</label></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="date" id="DOB" name="DOB">
+                        </td>
+
+                        <td>
+                            <input type="number" id="Phone" name="Phone"
+                                placeholder="+880XXXXXXXXXX">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender :</label></td>
+
+                        <td>
+                            <input type="checkbox" id="Male" name="Gender" value="Male">
+                            <label for="Male">Male</label>
+
+                            <input type="checkbox" id="Female" name="Gender" value="Female">
+                            <label for="Female">Female</label>
+
+                            <input type="checkbox" id="Others" name="Gender" value="Others">
+                            <label for="Others">Others</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Country">Country :</label></td>
+
+                        <td>
+                            <select id="Country" name="Country">
+                                <option>Bangladesh</option>
+                                <option>Portugal</option>
+                                <option>USA</option>
                             </select>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <input type="checkbox" id="Condition" Condition="Condition">
-                            <label for="Condition"><font color="red"> I have Agreed the terms and conditions</font></label>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="Condition" name="Condition">
+                            <label for="Condition">
+                                <font color="red">I have agreed to the Terms and Conditions</font>
+                            </label>
+                        </td>
+                    </tr>
 
-                    </table>
-                </form>
+                    <tr>
+                        <td>
+                            <input type="submit" class="submitbtn" id="submit" value="SUBMIT">
+                        </td>
+
+                        <td>
+                            <input type="reset" class="clearbtn" id="reset" value="CLEAR">
+                        </td>
+                    </tr>
+
+                </table>
+
             </fieldset>
 
-            <input type="submit" class="submitbtn" id="submit" name="submit" value="SUBMIT">
-            <input type="reset" class="clearbtn" id="reset" name="reset" value="CLEAR">
-            
+        </form>
 
-        </div>
-    </body>
+    </div>
+
+    <div class="footer">
+        <h2>Created 2026</h2>
+    </div>
+
+</body>
+
 </html>
