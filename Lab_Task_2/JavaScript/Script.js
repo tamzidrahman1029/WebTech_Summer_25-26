@@ -7,6 +7,11 @@ function collect_data()
 {
     let isNameValid=collect_name();
     let isPasswordValid=collect_password();
+
+    if(isNameValid && isPasswordValid)
+    {
+        alert("Successfully login");
+    }
     return false;
 }
 
@@ -24,6 +29,12 @@ function collect_name()
         document.getElementById("NameError").innerHTML="Correct UserName";
         return true;
     }
+
+    else
+    {
+        document.getElementById("NameError").innerHTML="Name incorrect";
+        return false;
+    }
     
     console.log(UserName);
     return true;
@@ -36,7 +47,7 @@ function collect_password()
     
     if(Password === "")
     {
-        document.getElementById("PassError").innerHTML="Password must be filled"
+        document.getElementById("PassError").innerHTML="Password must be filled";
         return false;
     }
 
@@ -44,6 +55,12 @@ function collect_password()
     {
         document.getElementById("PassError").innerHTML="Correct Password";
         return true;
+    }
+
+    else
+    {
+        document.getElementById("PassError").innerHTML="Password incorrect";
+        return false;
     }
 
     console.log(Password);
