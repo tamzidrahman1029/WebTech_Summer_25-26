@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="../Design/Style.css">
+    <script src="../JavaScript/Script.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>My E-commerce Site</h1>
+</div>
+
+<div class="container">
+
+    <!-- Add to Cart -->
+
+    <fieldset>
+        <legend>Add to Cart</legend>
+
+        <table>
+
+            <tr>
+                <td>Product Name</td>
+                <td>:</td>
+                <td>T-Shirt</td>
+            </tr>
+
+            <tr>
+                <td>Unit Price</td>
+                <td>:</td>
+                <td>500 Tk</td>
+            </tr>
+
+            <tr>
+                <td>Quantity</td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Quantity" value="1" min="1" oninput="calculateTotal()">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Total Price</td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="TotalPrice" readonly>
+                </td>
+            </tr>
+
+        </table>
+
+        <p id="Coupon"></p>
+
+    </fieldset>
+
+    <!-- Checkout -->
+
+    <fieldset>
+
+        <legend>Checkout Form</legend>
+
+        <table>
+
+            <tr>
+                <td>Shipping Address</td>
+                <td>
+                    <textarea id="Address" rows="5" cols="25"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Delivery</td>
+                <td>
+                    <select id="Delivery" onchange="deliveryCharge()">
+                        <option>Inside Dhaka</option>
+                        <option>Outside Dhaka</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Final Price</td>
+                <td>
+                    <input type="text" id="FinalPrice" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="Check" onchange="showButton()">
+                    I agree to all the terms and conditions
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" id="Submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+
+    </fieldset>
+
+</div>
+
+<div class="footer">
+    Copyright@2026
+</div>
+
+</body>
+</html>
